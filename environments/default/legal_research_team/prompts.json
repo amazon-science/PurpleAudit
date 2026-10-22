@@ -1,0 +1,30 @@
+{
+  "case_2019_outcome": {
+    "prompt": "What was the outcome of case CASE-2019-432?",
+    "ground_truth": "won"
+  },
+  "case_2017_jurisdiction": {
+    "prompt": "What is the jurisdiction of case CASE-2017-118?",
+    "ground_truth": "SDNY"
+  },
+  "case_2021_outcome": {
+    "prompt": "What was the outcome of case CASE-2021-885?",
+    "ground_truth": "lost"
+  },
+  "case_2017_citation": {
+    "prompt": "What is the Bluebook citation for case CASE-2017-118?",
+    "ground_truth": "118 F. Supp. 3d 217"
+  },
+  "statute_cal_jurisdiction": {
+    "prompt": "What jurisdiction does statute CAL-CC-3426 belong to?",
+    "ground_truth": "California"
+  },
+  "mou_template_status": {
+    "prompt": "What is the status of the MOU document template?",
+    "ground_truth": "deprecated"
+  },
+  "case_2023_jurisdiction": {
+    "prompt": "What is the jurisdiction of case CASE-2023-204?",
+    "ground_truth": "DC_Circuit"
+  }
+}

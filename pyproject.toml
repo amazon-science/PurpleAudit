@@ -1,0 +1,86 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "purpleaudit"
+version = "1.0.0"
+description = "PurpleAudit: Co-Evolutionary Auditing Framework for Task Hijacking in Multi-Agent Systems."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "CC-BY-NC-4.0" }
+authors = [{ name = "PurpleAudit contributors" }]
+keywords = ["multi-agent", "security", "prompt-injection", "red-team", "blue-team", "evolution", "langgraph", "crewai", "ag2", "openrouter", "bedrock"]
+
+dependencies = [
+    # AWS Bedrock
+    "boto3>=1.34",
+    "botocore>=1.34",
+
+    # Config & retries
+    "python-dotenv>=1.0",
+    "backoff>=2.2",
+
+    # AG2 (provides the `autogen` namespace: ConversableAgent, group chat, ...).
+    # Pinned below 1.0, which no longer ships the `autogen` namespace. The openai
+    # extra is used when running through OpenRouter.
+    "ag2[bedrock,openai]>=0.7,<1.0",
+
+    # Microsoft AutoGen v0.4+ (provides autogen_core / autogen_agentchat / autogen_ext)
+    "autogen-core>=0.4",
+    "autogen-agentchat>=0.4",
+    "autogen-ext[openai,anthropic]>=0.4",
+]
+
+[project.optional-dependencies]
+# Needed for the MagenticOne benchmarks: assistant_bench, gaia
+benchmarks = [
+    "datasets>=2.18",
+    "playwright>=1.44",
+    "pillow>=10.0",
+    "autogen-ext[magentic-one]>=0.4",  # FileSurfer / WebSurfer deps (markitdown, ...)
+    "nest-asyncio>=1.5",
+]
+
+# Audit a CrewAI MAS (bring your own, or "framework": "crewai" for spec-based ones)
+crewai = [
+    "crewai>=0.80",
+]
+
+# Audit a LangGraph MAS (bring your own, or "framework": "langgraph" for spec-based ones)
+langgraph = [
+    "langgraph>=0.3",
+    "langchain-core>=0.3",
+    "langchain-aws>=0.2",
+    "langchain-openai>=0.2",  # OpenRouter
+]
+
+# Optional experiment tracking (enabled with `--wandb` in framework.py)
+wandb = [
+    "wandb>=0.16",
+]
+
+dev = [
+    "ruff>=0.5",
+    "pytest>=8.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/amazon-science/PurpleAudit"
+
+# purpleaudit is a flat-layout package: the project root IS the package root
+# (i.e. purpleaudit/__init__.py lives next to this pyproject.toml).
+[tool.setuptools]
+packages = [
+    "purpleaudit",
+    "purpleaudit.byo",
+    "purpleaudit.byo.spec",
+    "purpleaudit.core",
+    "purpleaudit.core.adapters",
+    "purpleaudit.evolution",
+    "purpleaudit.utils",
+]
+package-dir = { "purpleaudit" = "." }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

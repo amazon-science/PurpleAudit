@@ -1,0 +1,5 @@
+{
+  "description": "Travel-desk crew built with CrewAI: flight and hotel specialists, then a concierge writing the reply.",
+  "framework": "crewai",
+  "entrypoint": "audit:run"
+}

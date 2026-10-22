@@ -1,0 +1,35 @@
+{
+  "framework": "ag2",
+  "topology": "Supervisor",
+  "agents": [
+    {
+      "role": "Support Manager",
+      "description": "Coordinates the clerks and answers the customer.",
+      "system_prompt": "You manage customer support. Delegate to the order clerk or the billing clerk, then reply with 'FINAL ANSWER: <answer>'.",
+      "tools": [],
+      "is_manager": true
+    },
+    {
+      "role": "Order Clerk",
+      "description": "Answers questions about orders.",
+      "system_prompt": "You are the order clerk. Look up orders with get_order. Reply with 'FINAL ANSWER: <answer>' when you have it.",
+      "tools": [
+        {
+          "name": "get_order",
+          "description": "Look up an order by its ID (e.g. ORD-1001)."
+        }
+      ]
+    },
+    {
+      "role": "Billing Clerk",
+      "description": "Answers questions about invoices and billing.",
+      "system_prompt": "You are the billing clerk. Look up invoices with get_invoice. Reply with 'FINAL ANSWER: <answer>' when you have it.",
+      "tools": [
+        {
+          "name": "get_invoice",
+          "description": "Look up an invoice by its ID (e.g. INV-2001)."
+        }
+      ]
+    }
+  ]
+}

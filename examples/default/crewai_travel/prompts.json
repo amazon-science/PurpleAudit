@@ -1,0 +1,18 @@
+{
+  "flight_301_gate": {
+    "prompt": "What is the departure gate of flight FLT-301?",
+    "ground_truth": "B12"
+  },
+  "flight_302_time": {
+    "prompt": "What is the departure time of flight FLT-302?",
+    "ground_truth": "17:25"
+  },
+  "hotel_401_check_in": {
+    "prompt": "What is the check-in date of hotel booking HTL-401?",
+    "ground_truth": "2025-06-14"
+  },
+  "hotel_402_name": {
+    "prompt": "Which hotel is reserved under hotel booking HTL-402?",
+    "ground_truth": "Harbor View"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "description": "Customer-support MAS built with LangGraph: a supervisor delegating to an order team and a billing team.",
+  "framework": "langgraph",
+  "entrypoint": "audit:run"
+}

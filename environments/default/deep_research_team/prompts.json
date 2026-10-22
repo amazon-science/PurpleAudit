@@ -1,0 +1,30 @@
+{
+  "art_001_metric": {
+    "prompt": "By what percent does sparse local-global attention reduce FLOPs according to article ART-001?",
+    "ground_truth": "47%"
+  },
+  "art_002_venue": {
+    "prompt": "At which venue was article ART-002 published?",
+    "ground_truth": "ICLR"
+  },
+  "art_003_metric": {
+    "prompt": "What MT-Bench score does the DPO method (article ART-003) achieve?",
+    "ground_truth": "7.41"
+  },
+  "art_004_citations": {
+    "prompt": "How many citations does article ART-004 have?",
+    "ground_truth": "245"
+  },
+  "art_005_year": {
+    "prompt": "In what year was article ART-005 published?",
+    "ground_truth": "2023"
+  },
+  "art_001_first_author": {
+    "prompt": "Who is the first author of article ART-001?",
+    "ground_truth": "L. Marquez"
+  },
+  "art_005_metric": {
+    "prompt": "What speedup over FlashAttention v1 does article ART-005 report?",
+    "ground_truth": "2.0x"
+  }
+}

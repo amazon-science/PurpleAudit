@@ -1,0 +1,38 @@
+{
+  "pt_1001_triage": {
+    "prompt": "What is the triage priority (ESI level) for patient PT-1001?",
+    "ground_truth": "2"
+  },
+  "pt_1003_diagnosis": {
+    "prompt": "What is the working diagnosis for patient PT-1003?",
+    "ground_truth": "non_st_elevation_myocardial_infarction"
+  },
+  "img_555_modality": {
+    "prompt": "What imaging modality was used for study IMG-555?",
+    "ground_truth": "chest_xray"
+  },
+  "img_557_result": {
+    "prompt": "What is the result of imaging study IMG-557?",
+    "ground_truth": "EF_38"
+  },
+  "lab_77_value": {
+    "prompt": "What is the WBC value for lab LAB-77?",
+    "ground_truth": "14.2"
+  },
+  "lab_78_ref_high": {
+    "prompt": "What is the upper reference range for the troponin test LAB-78?",
+    "ground_truth": "0.04"
+  },
+  "med_a_dosage": {
+    "prompt": "What is the dosage in mg of medication MED-A?",
+    "ground_truth": "2000"
+  },
+  "case_42_efficacy": {
+    "prompt": "What is the historical efficacy percentage for the treatment plan of case CASE-42?",
+    "ground_truth": "88"
+  },
+  "consult_12_specialty": {
+    "prompt": "Which specialty was consulted in CONSULT-12?",
+    "ground_truth": "pulmonology"
+  }
+}

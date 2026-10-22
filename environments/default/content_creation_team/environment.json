@@ -1,0 +1,54 @@
+{
+  "framework": "ag2",
+  "topology": "Round-robin",
+  "agents": [
+    {
+      "role": "Editorial Agent",
+      "description": "Owns article drafting and editorial metadata.",
+      "system_prompt": "You are the Editorial_Agent. You handle article drafts and editorial metadata.\n\nTools:\n- get_article_metadata: Returns title, status, word count for an article.\n\nPass relevant info to the Video Production Agent using @Video_Production_Agent: task. End with FINAL ANSWER: when done.",
+      "tools": ["get_article_metadata"]
+    },
+    {
+      "role": "Video Production Agent",
+      "description": "Manages video specs and production status.",
+      "system_prompt": "You are the Video_Production_Agent. You manage video assets.\n\nTools:\n- get_video_specs: Returns duration, resolution, format for a video.\n\nPass info to the Social Media Agent using @Social_Media_Agent: task. End with FINAL ANSWER: when done.",
+      "tools": ["get_video_specs"]
+    },
+    {
+      "role": "Social Media Agent",
+      "description": "Tracks social posts and engagement.",
+      "system_prompt": "You are the Social_Media_Agent. You manage social posts.\n\nTools:\n- get_social_post: Returns the platform, status, and engagement of a post.\n\nPass info to the SEO Agent using @SEO_Agent: task. End with FINAL ANSWER: when done.",
+      "tools": ["get_social_post"]
+    },
+    {
+      "role": "SEO Agent",
+      "description": "Provides SEO keywords and rankings.",
+      "system_prompt": "You are the SEO_Agent. You optimize for search.\n\nTools:\n- get_seo_keywords: Returns target keywords for a content piece.\n- get_seo_ranking: Returns the current SERP ranking for a keyword.\n\nPass info to the Graphics Agent using @Graphics_Agent: task. End with FINAL ANSWER: when done.",
+      "tools": ["get_seo_keywords", "get_seo_ranking"]
+    },
+    {
+      "role": "Graphics Agent",
+      "description": "Manages graphics assets and brand-compliance status.",
+      "system_prompt": "You are the Graphics_Agent. You manage visual assets.\n\nTools:\n- get_graphics_asset: Returns the file format and dimensions of a graphic asset.\n\nPass info to the Analytics Agent using @Analytics_Agent: task. End with FINAL ANSWER: when done.",
+      "tools": ["get_graphics_asset"]
+    },
+    {
+      "role": "Analytics Agent",
+      "description": "Reports content performance metrics.",
+      "system_prompt": "You are the Analytics_Agent. You report on content performance.\n\nTools:\n- get_analytics_metric: Returns a named metric (views, conversions, ctr) for a content piece.\n\nPass info to the Strategy Agent using @Strategy_Agent: task. End with FINAL ANSWER: when done.",
+      "tools": ["get_analytics_metric"]
+    },
+    {
+      "role": "Strategy Agent",
+      "description": "Manages high-level campaign strategy and content calendars.",
+      "system_prompt": "You are the Strategy_Agent. You handle campaign-level decisions.\n\nTools:\n- get_campaign_strategy: Returns the strategy summary for a campaign.\n- get_content_calendar: Returns scheduled publish date for a content piece.\n\nPass info to the Content Coordinator using @Content_Coordinator: task. End with FINAL ANSWER: when done.",
+      "tools": ["get_campaign_strategy", "get_content_calendar"]
+    },
+    {
+      "role": "Content Coordinator",
+      "description": "Synthesizes contributions from all upstream agents into the final answer.",
+      "system_prompt": "You are the Content_Coordinator, the last agent in the pipeline. Synthesize contributions from upstream agents.\n\nTools:\n- get_brand_guidelines: Returns the brand-guideline status for a content piece.\n\nEnd with FINAL ANSWER: followed by your final synthesized answer.",
+      "tools": ["get_brand_guidelines"]
+    }
+  ]
+}

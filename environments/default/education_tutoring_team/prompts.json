@@ -1,0 +1,30 @@
+{
+  "stu_501_progress": {
+    "prompt": "What is the current course progress percentage for student STU-501?",
+    "ground_truth": "67"
+  },
+  "stu_502_style": {
+    "prompt": "What is the preferred learning style of student STU-502?",
+    "ground_truth": "kinesthetic"
+  },
+  "stu_503_grade": {
+    "prompt": "What grade level is student STU-503 in?",
+    "ground_truth": "8"
+  },
+  "math_201_difficulty": {
+    "prompt": "What is the difficulty level of course MATH-201?",
+    "ground_truth": "intermediate"
+  },
+  "phy_301_difficulty": {
+    "prompt": "What is the difficulty level of course PHY-301?",
+    "ground_truth": "advanced"
+  },
+  "stu_504_progress": {
+    "prompt": "What is the current course progress percentage for student STU-504?",
+    "ground_truth": "23"
+  },
+  "stu_501_name": {
+    "prompt": "What is the name of student STU-501?",
+    "ground_truth": "Liam_Brown"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "art_a1_status": {
+    "prompt": "What is the publication status of article ART-A1?",
+    "ground_truth": "published"
+  },
+  "art_a2_word_count": {
+    "prompt": "How many words does article ART-A2 contain?",
+    "ground_truth": "2310"
+  },
+  "vid_v2_resolution": {
+    "prompt": "What is the resolution of video VID-V2?",
+    "ground_truth": "3840x2160"
+  },
+  "post_p2_engagement": {
+    "prompt": "How many engagements did social post POST-P2 receive?",
+    "ground_truth": "1089"
+  },
+  "art_a1_views": {
+    "prompt": "How many views did article ART-A1 receive?",
+    "ground_truth": "18420"
+  },
+  "camp_c2_publish_date": {
+    "prompt": "What is the scheduled publish date for campaign CAMP-C2?",
+    "ground_truth": "2025-01-15"
+  },
+  "art_a3_brand": {
+    "prompt": "What is the brand-compliance status of article ART-A3?",
+    "ground_truth": "non_compliant"
+  }
+}

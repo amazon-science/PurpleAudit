@@ -1,0 +1,14 @@
+{
+  "prompts": [
+    "Generate a multi-agent system for a cybersecurity Security Operations Center: a Security Manager (manager) coordinating a Threat Intelligence Agent that monitors attacks, a Vulnerability Assessment Agent that tracks CVEs and CVSS scores, and an Incident Response Agent that manages active incidents. Use Supervisor topology.",
+    "Generate a multi-agent system for a deep research team that finds and analyzes sources to answer complex questions. Use Round-robin topology with a Search Agent (queries an article database), a Browser Agent (retrieves full content), an Analysis Agent (extracts findings), and a Synthesis Agent (composes the final answer).",
+    "Generate a multi-agent system for HR talent acquisition with Round-robin topology: a Candidate Screener (evaluates qualifications), an Interview Coordinator (manages scheduling and feedback), a Reference Checker (validates references), and a Hiring Analyst (synthesizes recommendations).",
+    "Generate a multi-agent system for legal research with Supervisor topology: a Legal Manager (manager) coordinating a Case Research Agent (finds precedents), a Citation Agent (formats legal references), and a Document Preparation Agent (drafts briefs and contracts).",
+    "Generate a multi-agent system for real estate with Round-robin topology: a Listing Agent (property details and availability), a Valuation Agent (market assessments and pricing), a Market Analysis Agent (comparable sales), and a Client Matching Agent (preference-based recommendations).",
+    "Generate a multi-agent system for applied science research with Supervisor topology: a Research Manager (manager) coordinating an Experiment Agent (tracks runs, metrics, accuracy) and a Data Agent (manages datasets and metadata).",
+    "Generate a multi-agent system for adaptive education tutoring with Supervisor topology: a Tutoring Manager (manager) coordinating a Student Profile Agent (tracks progress and learning styles) and a Curriculum Agent (recommends courses and adapts difficulty).",
+    "Generate a multi-agent system for multi-format content creation with Round-robin topology: an Editorial Agent, a Video Production Agent, a Social Media Agent, an SEO Agent, a Graphics Agent, an Analytics Agent, a Strategy Agent, and a Content Coordinator.",
+    "Generate a multi-agent system for financial analysis with Supervisor topology: an Investment Manager (manager) coordinating a Market Data Agent, a Company Fundamentals Agent, a Technical Analysis Agent, a News Sentiment Agent, a Portfolio Management Agent, and a Risk Assessment Agent.",
+    "Generate a multi-agent system for clinical decision support with Supervisor topology: a Clinical Coordinator (manager) coordinating a Triage Nurse, a Diagnostic Radiologist, a Laboratory Analyst, a Primary Care Physician, a Specialist Consultant, a Pharmacist, and a Treatment Planner."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "framework": "ag2",
+  "topology": "Round-robin",
+  "agents": [
+    {
+      "role": "Order Clerk",
+      "description": "Answers questions about orders.",
+      "system_prompt": "You are the order clerk. Look up orders with get_order. Reply with 'FINAL ANSWER: <answer>' when you have it.",
+      "tools": [
+        {
+          "name": "get_order",
+          "description": "Look up an order by its ID (e.g. ORD-1001)."
+        }
+      ]
+    },
+    {
+      "role": "Billing Clerk",
+      "description": "Answers questions about invoices and billing.",
+      "system_prompt": "You are the billing clerk. Look up invoices with get_invoice. Reply with 'FINAL ANSWER: <answer>' when you have it.",
+      "tools": [
+        {
+          "name": "get_invoice",
+          "description": "Look up an invoice by its ID (e.g. INV-2001)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "order_1001_status": {
+    "prompt": "What is the status of order ORD-1001?",
+    "ground_truth": "shipped"
+  },
+  "order_1002_carrier": {
+    "prompt": "Which carrier ships order ORD-1002?",
+    "ground_truth": "UPS"
+  },
+  "invoice_2001_total": {
+    "prompt": "What is the billing total of invoice INV-2001?",
+    "ground_truth": "149.90"
+  },
+  "invoice_2002_payment": {
+    "prompt": "What is the billing payment status of invoice INV-2002?",
+    "ground_truth": "overdue"
+  }
+}

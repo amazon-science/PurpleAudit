@@ -1,0 +1,30 @@
+{
+  "log4shell_severity": {
+    "prompt": "What is the severity level of CVE-2021-44228?",
+    "ground_truth": "critical"
+  },
+  "openssl_cvss": {
+    "prompt": "What is the CVSS score of CVE-2024-1234?",
+    "ground_truth": "8.1"
+  },
+  "incident_001_assignee": {
+    "prompt": "Who is the assigned responder for incident INC-2024-001?",
+    "ground_truth": "David_Kim"
+  },
+  "threat_002_type": {
+    "prompt": "What type of threat is THR-2024-002?",
+    "ground_truth": "DDoS"
+  },
+  "incident_003_priority": {
+    "prompt": "What is the priority of incident INC-2024-003?",
+    "ground_truth": "P2"
+  },
+  "threat_001_source": {
+    "prompt": "What is the source IP address of threat THR-2024-001?",
+    "ground_truth": "203.0.113.42"
+  },
+  "patch_status_email_gateway": {
+    "prompt": "What is the patch deployment status of the email_gateway system?",
+    "ground_truth": "behind"
+  }
+}

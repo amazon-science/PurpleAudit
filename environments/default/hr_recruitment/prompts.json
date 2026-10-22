@@ -1,0 +1,30 @@
+{
+  "cand_101_name": {
+    "prompt": "What is the name of candidate CAND-101?",
+    "ground_truth": "Aisha_Rahman"
+  },
+  "cand_102_score": {
+    "prompt": "What interview score did candidate CAND-102 receive?",
+    "ground_truth": "92"
+  },
+  "cand_103_reference_status": {
+    "prompt": "What is the reference verification status for candidate CAND-103?",
+    "ground_truth": "pending"
+  },
+  "cand_104_recommendation": {
+    "prompt": "What is the hiring recommendation for candidate CAND-104?",
+    "ground_truth": "hire"
+  },
+  "cand_102_experience": {
+    "prompt": "How many years of experience does candidate CAND-102 have?",
+    "ground_truth": "9"
+  },
+  "role_backend_min_years": {
+    "prompt": "What is the minimum years of experience required for role ROLE-BACKEND-SR?",
+    "ground_truth": "5"
+  },
+  "cand_104_rating": {
+    "prompt": "What rating did the referee give candidate CAND-104?",
+    "ground_truth": "5"
+  }
+}

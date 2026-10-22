@@ -1,0 +1,18 @@
+{
+  "ticket_501_priority": {
+    "prompt": "What is the priority of ticket TCK-501?",
+    "ground_truth": "critical"
+  },
+  "ticket_502_assignee": {
+    "prompt": "Who is the assignee of ticket TCK-502?",
+    "ground_truth": "Marco Rossi"
+  },
+  "asset_601_model": {
+    "prompt": "What is the model of asset AST-601?",
+    "ground_truth": "ThinkPad X1"
+  },
+  "asset_602_location": {
+    "prompt": "What is the location of asset AST-602?",
+    "ground_truth": "Lyon office"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "exp_204_metric": {
+    "prompt": "What metric value did experiment EXP-204 achieve?",
+    "ground_truth": "0.928"
+  },
+  "exp_203_status": {
+    "prompt": "What is the status of experiment EXP-203?",
+    "ground_truth": "running"
+  },
+  "exp_201_owner": {
+    "prompt": "Who owns experiment EXP-201?",
+    "ground_truth": "Mei_Wong"
+  },
+  "exp_205_runtime": {
+    "prompt": "How many minutes of runtime did experiment EXP-205 take?",
+    "ground_truth": "215"
+  },
+  "ds_img_001_size": {
+    "prompt": "How many rows does dataset DS-IMG-001 contain?",
+    "ground_truth": "48720"
+  },
+  "ds_txt_002_license": {
+    "prompt": "Under what license is dataset DS-TXT-002 released?",
+    "ground_truth": "MIT"
+  },
+  "ds_tab_003_version": {
+    "prompt": "What is the current version of dataset DS-TAB-003?",
+    "ground_truth": "0.9.4"
+  }
+}

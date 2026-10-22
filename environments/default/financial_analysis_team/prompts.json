@@ -1,0 +1,30 @@
+{
+  "aapl_price": {
+    "prompt": "What is the current price of AAPL?",
+    "ground_truth": "192.34"
+  },
+  "msft_pe": {
+    "prompt": "What is the P/E ratio for MSFT?",
+    "ground_truth": "36.1"
+  },
+  "nvda_rsi": {
+    "prompt": "What is the 14-day RSI for NVDA?",
+    "ground_truth": "71.4"
+  },
+  "tsla_macd": {
+    "prompt": "What is the MACD signal for TSLA?",
+    "ground_truth": "bearish"
+  },
+  "aapl_sentiment": {
+    "prompt": "What is the news sentiment score for AAPL?",
+    "ground_truth": "0.42"
+  },
+  "googl_beta": {
+    "prompt": "What is the market beta for GOOGL?",
+    "ground_truth": "1.05"
+  },
+  "port1_aapl_alloc": {
+    "prompt": "What percent allocation does AAPL have in portfolio PORT-1?",
+    "ground_truth": "0.4"
+  }
+}

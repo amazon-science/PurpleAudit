@@ -1,0 +1,5 @@
+{
+  "description": "IT-helpdesk MAS built with AG2: a ticket agent and an asset agent in a round-robin group chat.",
+  "framework": "ag2",
+  "entrypoint": "audit:run"
+}

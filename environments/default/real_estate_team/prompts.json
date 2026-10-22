@@ -1,0 +1,30 @@
+{
+  "prop_a100_price": {
+    "prompt": "What is the listed price of property PROP-A100?",
+    "ground_truth": "875000"
+  },
+  "prop_a101_status": {
+    "prompt": "What is the listing status of property PROP-A101?",
+    "ground_truth": "pending"
+  },
+  "prop_a102_address": {
+    "prompt": "What is the street address of property PROP-A102?",
+    "ground_truth": "9_Cedar_Ct"
+  },
+  "prop_a103_sqft": {
+    "prompt": "How many square feet does property PROP-A103 have?",
+    "ground_truth": "3200"
+  },
+  "downtown_avg_psf": {
+    "prompt": "What is the average price per square foot in the Downtown neighborhood?",
+    "ground_truth": "490"
+  },
+  "prop_a100_market_value": {
+    "prompt": "What is the appraised market value of property PROP-A100?",
+    "ground_truth": "890000"
+  },
+  "client_303_budget": {
+    "prompt": "What is the budget of client CLI-303?",
+    "ground_truth": "750000"
+  }
+}
